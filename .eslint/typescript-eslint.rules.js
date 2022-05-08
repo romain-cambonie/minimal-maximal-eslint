@@ -123,7 +123,7 @@ module.exports = {
     {
       selector: 'default',
       format: ['camelCase'],
-      leadingUnderscore: 'forbid',
+      leadingUnderscore: 'allow',
       trailingUnderscore: 'forbid'
     },
     {
@@ -298,16 +298,18 @@ module.exports = {
   ],
   '@typescript-eslint/no-shadow': ['error', { builtinGlobals: true, hoist: 'all' }],
   '@typescript-eslint/no-throw-literal': 'error',
-  '@typescript-eslint/no-unused-expressions': 'error',
+  '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
   '@typescript-eslint/no-unused-vars': [
     'error',
     {
       vars: 'all',
       args: 'all',
-      varsIgnorePattern: '^_',
-      argsIgnorePattern: '^_',
-      caughtErrors: 'all'
-    }
+      varsIgnorePattern: '^_\\w*',
+      argsIgnorePattern: '^_\\w*',
+      caughtErrors: 'all',
+      caughtErrorsIgnorePattern: '^_\\w*',
+      ignoreRestSiblings: true,
+    },
   ],
   '@typescript-eslint/no-use-before-define': 'error',
   '@typescript-eslint/no-useless-constructor': 'error',
