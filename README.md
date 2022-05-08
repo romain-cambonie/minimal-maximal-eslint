@@ -4,9 +4,9 @@ A modular approach to setup an easily modfiable and shareable lint ruleset linte
 The default ruleset is RATHER STRICT and you should not hesitate to relax rules that are too restrictive for your usage.
 
 # Installation
-Put the following files in your projet root
+Put the following files and directories in your projet root
 ```
-- .eslint
+- .eslint <-- ruleset directory
 - .eslintignore
 - .eslintrc.js <-- Lint config file entrypoint
 - .prettierignore
