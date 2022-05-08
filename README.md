@@ -5,22 +5,26 @@ The default ruleset is RATHER STRICT and you should not hesitate to relax rules 
 
 # Installation
 Put the following files in your projet root
-.eslint
-.eslintignore
-.eslintrc.js <-- Lint config file entrypoint
-.prettierignore
-.prettierrc.json <-- Prettier config file entrypoint
+```
+- .eslint
+- .eslintignore
+- .eslintrc.js <-- Lint config file entrypoint
+- .prettierignore
+- .prettierrc.json <-- Prettier config file entrypoint
+```
 
 # Scripts
 In your package.json 
+```json
 "scripts": {
     ...
     "prettier": "prettier --write src",
     "lint": "eslint src"
 }
+```
 
 # Usage 
-Run the commands (eg with npm)
-```npm run lint```
-or 
-```npm run prettier```
+Run the commands (eg with npm)  
+```npm run lint```  
+or  
+```npm run prettier```  
