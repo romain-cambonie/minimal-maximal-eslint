@@ -29,18 +29,18 @@ module.exports = {
         ...require('./.eslint/typescript-eslint.rules')
       }
     },
-    {
-      env: {
-        'jest/globals': true
-      },
-      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
-      files: ['**/*.spec.ts'],
-      plugins: ['jest'],
-      rules: {
-        ...require('./.eslint/eslint-test.rules'),
-        ...require('./.eslint/typescript-eslint-test.rules'),
-        ...require('./.eslint/jest-eslint.rules')
-      }
-    }
+    // {
+    //   env: {
+    //     'jest/globals': true
+    //   },
+    //   extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    //   files: ['**/*.spec.ts'],
+    //   plugins: ['jest'],
+    //   rules: {
+    //     ...require('./.eslint/eslint-test.rules'),
+    //     ...require('./.eslint/typescript-eslint-test.rules'),
+    //     ...require('./.eslint/jest-eslint.rules')
+    //   }
+    // }
   ]
 };

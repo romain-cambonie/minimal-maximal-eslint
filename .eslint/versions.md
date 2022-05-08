@@ -1,4 +1,11 @@
-# Rule list has been established against the following packages versions majors
-- eslint: 8
-- eslint-plugin-jest: 25
-- typescript-eslint/eslint-plugin: 5
+# Rule list has been established against the following packages
+"@types/jest": "^27.5.0",
+"@types/node": "^17.0.31",
+"@typescript-eslint/eslint-plugin": "^5.22.0",
+"@typescript-eslint/parser": "^5.22.0",
+"eslint": "^8.15.0",
+"eslint-config-prettier": "^8.5.0",
+"eslint-plugin-jest": "^26.1.5",
+"eslint-plugin-prettier": "^4.0.0",
+"jest": "^27.5.1",
+"prettier": "^2.6.2",
